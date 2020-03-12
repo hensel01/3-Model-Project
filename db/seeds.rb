@@ -1,15 +1,11 @@
-Employee.destroy_all
-Manager.destroy_all
-Department.destroy_all
+dart1 = Dart.create(name: "Ole Reliable", age: 1, length_in_inches: 4.1)
+dart2 = Dart.create(name: "Straight and True", age: 2, length_in_inches: 4.5)
+dart3 = Dart.create(name: "Bullseye", age: 3, length_in_inches: 5.2)
 
-m1 = Manager.create(name: "Tashawn")
-m2 = Manager.create(name: "Gabbie")
-m3 = Manager.create(name: "Jeff")
+d1 = Dartboard.create(name: "Hit me with your best shot", age: 5, price: 30.5)
+d2 = Dartboard.create(name: "Fire away", age: 7, price: 28.3)
+d3 = Dartboard.create(name: "Bored", age: 12, price: 25.2)
 
-d1 = Department.create(name: "Sales")
-d2 = Department.create(name: "Marketing")
-d3 = Department.create(name: "Accounting")
-
-e1 = Employee.create(name: "Brianna", manager:m1, department:d1)
-e2 = Employee.create(name: "Chett", manager:m2, department:d2)
-e3 = Employee.create(name: "Caryn", manager:m3, department:d3)
+player1 = Player.create(name: "Eliot", age: 24, dart_id:dart1.id, dartboard_id:d1.id)
+player2 = Player.create(name: "Lucas", age: 22, dart_id:dart2.id, dartboard_id:d2.id)
+player3 = Player.create(name: "Diana", age: 21, dart_id:dart3.id, dartboard_id:d3.id)
